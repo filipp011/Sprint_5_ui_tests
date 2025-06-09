@@ -16,19 +16,7 @@ def driver():
     yield driver
     driver.quit()
 
-@pytest.fixture
-def unique_email():
-    """Генерация уникального email-адреса для тестирования."""
-    domain = "@gmail.com"
-    random_string = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
-    return random_string + domain
 
-@pytest.fixture
-def unique_email_not_valid():
-    """Генерация уникального email-адреса для тестирования."""
-    domain = "gmail"
-    random_string = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
-    return random_string + domain
 
 
 
