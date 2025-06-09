@@ -18,8 +18,6 @@ def driver():
 
 
 
-
-
 @pytest.fixture
 def login_user(driver):
     """Фикстура: логин авторизованного пользователя"""
