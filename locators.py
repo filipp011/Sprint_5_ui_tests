@@ -19,7 +19,7 @@ class Alllocarots():
     # Кнопка создания аккаунта в поп-апе после нажатия на кнопку "Нет аккаунта"
     CREATE_ACCOUNT = (By.XPATH, ".//button[text()='Создать аккаунт']")
     # Шапка профиля созданного юзера на главной стр
-    PROFILE_NAME = (By.XPATH, '/html/body/div/div/div[1]/div/div[1]/div/h3')
+    PROFILE_NAME = (By.XPATH, "//h3[@class='profileText name']")
     # Отображение аватарки на главной странице
     AVATAR_MAIN_PAGE = (By.CLASS_NAME, "circleSmall")
     # Текст "Ошибка"
